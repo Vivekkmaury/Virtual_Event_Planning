@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Virtual Event Planning</title>
+	<link rel="stylesheet" href="style.css">
+<style>
+	
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color and center the content */
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Set the width of the main container */
+main {
+  width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the header section */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  border-bottom-color: #333;
+}
+
+/* Style the form section */
+form label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="time"],
+form textarea {
+  width: 300px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Style the upcoming events section */
+section ul {
+  list-style-type: none;
+}
+
+section ul li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+section ul li:last-child {
+  border-bottom: none;
+}
+
+section ul li h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+section ul li p {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+</style>
+
+</head>
+<body>
+	<header>
+		<h1>Virtual Event Planning</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Create an Event</h2>
+			<form>
+				<label for="event-name">Event Name:</label>
+				<input type="text" id="event-name" name="event-name"><br><br>
+				<label for="event-date">Event Date:</label>
+				<input type="date" id="event-date" name="event-date"><br><br>
+				<label for="event-time">Event Time:</label>
+				<input type="time" id="event-time" name="event-time"><br><br>
+				<label for="event-description">Event Description:</label><br>
+<textarea id="event-description" name="event-description" rows="5" cols="40"></textarea><br><br>
+				<input type="submit" value="Create Event">
+			</form>
+		</section>
+		<section>
+			<h2>Upcoming Events</h2>
+			<ul>
+				<li>
+					<h3>Event 1</h3>
+					<p>Date: 01/01/2024</p>
+					<p>Time: 12:00 PM</p>
+					<p>Description: This is the description of event 1.</p>
+				</li>
+				<li>
+					<h3>Event 2</h3>
+					<p>Date: 01/02/2024</p>
+					<p>Time: 2:00 PM</p>
+					<p>Description: This is the description of event 2.</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>
